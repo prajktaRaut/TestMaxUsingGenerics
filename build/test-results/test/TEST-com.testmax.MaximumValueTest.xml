@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.testmax.MaximumValueTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-29T09:36:47" hostname="admin1-desktop" time="0.0">
+  <properties/>
+  <testcase name="givenMethod_FindMaxValue_PresentAtSecondPositionAndReturn" classname="com.testmax.MaximumValueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
