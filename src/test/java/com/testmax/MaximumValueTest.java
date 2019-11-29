@@ -51,4 +51,14 @@ public class MaximumValueTest {
 
     }
 
+    @Test
+    public void givenMethod_FindFloatMaxValue_PresentAtThirdPositionAndReturn() {
+
+        MaximumValue maximumValue=new MaximumValue();
+        Float max=maximumValue.findMaxAccordingToPosition(3.4f,4.5f,7.6f);
+        Assert.assertEquals(Float.valueOf(7.6f),max);
+
+    }
+
+
 }
