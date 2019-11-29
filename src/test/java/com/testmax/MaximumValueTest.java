@@ -78,10 +78,26 @@ public class MaximumValueTest {
 
     }
 
+    @Test
+    public void givenMethod_FindIntegerMaxValue_UsingparameterConstructore_ReturnMaxValue() {
 
+        Integer maxValue=new MaximumValue<Integer>(76,87,12).testMaximum();
+        Assert.assertEquals(Integer.valueOf(87),maxValue);
+    }
 
+    @Test
+    public void givenMethod_FindFloatMaxValue_UsingparameterConstructore_ReturnMaxValue() {
 
+        Float maxValue=new MaximumValue<Float>(8.6f,7.6f,1.2f).testMaximum();
+        Assert.assertEquals(Float.valueOf(8.6f),maxValue);
+    }
 
+    @Test
+    public void givenMethod_FindStringMaxValue_UsingparameterConstructore_ReturnMaxValue() {
+
+        String maxValue=new MaximumValue<String>("Apple","Banana","Peach").testMaximum();
+        Assert.assertEquals("Peach",maxValue);
+    }
 
 
 

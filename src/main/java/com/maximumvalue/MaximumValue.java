@@ -2,6 +2,13 @@ package com.maximumvalue;
 
 public class MaximumValue<E extends Comparable<E>> {
 
+    E a,b,c;
+
+    public MaximumValue(E a, E b, E c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
 
     public static<E>  E findMaxValueOfAnyType(E i, E j, E k) {
 
@@ -16,5 +23,12 @@ public class MaximumValue<E extends Comparable<E>> {
     }
 
 
+    public E testMaximum() {
+
+        E value=findMaxValueOfAnyType(a,b,c);
+
+        return value;
+
+    }
 }
 
