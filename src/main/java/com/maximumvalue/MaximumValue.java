@@ -16,10 +16,16 @@ public class MaximumValue<E extends Comparable> {
             }
 
         }
+        this.printMax( param[param.length-1]);
         return param[param.length-1];
 
     }
 
+    public void printMax(E value)
+    {
+        System.out.println("Maximum value is "+value);
+
+    }
 
 }
 
