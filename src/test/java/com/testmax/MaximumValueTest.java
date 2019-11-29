@@ -15,5 +15,14 @@ public class MaximumValueTest {
 
     }
 
+    @Test
+    public void givenMethod_FindMaxValue_PresentAtSecondPositionAndReturn() {
+
+        MaximumValue maximumValue=new MaximumValue();
+        Integer max=maximumValue.findMaxAtFirstPosition(34,76,45);
+        Assert.assertEquals(Integer.valueOf(76),max);
+
+    }
+
 
 }
