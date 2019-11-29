@@ -59,8 +59,16 @@ public class MaximumValueTest {
     @Test
     public void givenMethod_FindStringMaxValue_PresentAtFirstPositionAndReturn() {
 
-        String max=maximumValue.findMaxAccordingToPosition("xyz","abc","pqr");
-        Assert.assertEquals("xyz",max);
+        String max=maximumValue.findMaxAccordingToPosition("Peach","Apple","Banana");
+        Assert.assertEquals("Peach",max);
+
+    }
+
+    @Test
+    public void givenMethod_FindStringMaxValue_PresentAtSecondPositionAndReturn() {
+
+        String max=maximumValue.findMaxAccordingToPosition("Apple","Peach","Banana");
+        Assert.assertEquals("Peach",max);
 
     }
 
