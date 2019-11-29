@@ -1,34 +1,25 @@
 package com.maximumvalue;
 
-public class MaximumValue<E extends Comparable<E>> {
+public class MaximumValue<E extends Comparable> {
 
-    E a,b,c;
+    public E findMaxValueOfAnyType(E... param) {
 
-    public MaximumValue(E a, E b, E c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-    }
+        for (int i=0;i<param.length-1;i++)
+        {
+            for (int j=0;j<param.length-i-1;j++)
+            {
+                if (param[j].compareTo(param[j+1])>0) {
+                    E temp = param[j];
+                    param[j] = param[j + 1];
+                    param[j + 1] = temp;
+                }
+            }
 
-    public static<E>  E findMaxValueOfAnyType(E i, E j, E k) {
-
-        if (i.toString().compareTo(j.toString()) > 0)
-            return i;
-        if (j.toString().compareTo(k.toString()) > 0)
-            return j;
-        if (k.toString().compareTo(i.toString()) > 0)
-            return k;
-
-        return null;
-    }
-
-
-    public E testMaximum() {
-
-        E value=findMaxValueOfAnyType(a,b,c);
-
-        return value;
+        }
+        return param[param.length-1];
 
     }
+
+
 }
 
